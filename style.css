@@ -1,0 +1,191 @@
+body {
+    background-color: #f5f5f7;
+}
+
+nav {
+    color: #d3d3d3;
+    background-color: #333336;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 48px;
+    font-size: 17px;
+}
+
+nav li:hover {
+    color: #FFFFFF;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+#li_play {
+    float: right;
+}
+
+#index{
+    padding: 10px;
+    background-color: #d3d3d370;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 48px;
+}
+
+@keyframes keyframes_move {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        color: #FFFFFF;
+        left: 75%;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#move_arduino {
+    font-size: 30px;
+    color: #333336;
+    text-shadow: 5px 5px 5px #d3d3d3;
+    position: relative;
+    animation: keyframes_move 10s;
+    animation-iteration-count: infinite;
+}
+
+#move_android {
+    font-size: 35px;
+    color: #333336;
+    text-shadow: 5px 5px 5px #d3d3d3;
+    position: relative;
+    animation: keyframes_move 9s;
+    animation-iteration-count: infinite;
+}
+
+#move_web {
+    font-size: 40px;
+    color: #333336;
+    text-shadow: 5px 5px 5px #d3d3d3;
+    position: relative;
+    animation: keyframes_move 8s;
+    animation-iteration-count: infinite;
+}
+
+#move_ios {
+    font-size: 50px;
+    color: #333336;
+    text-shadow: 5px 5px 5px #d3d3d3;
+    position: relative;
+    animation: keyframes_move 7s;
+    animation-iteration-count: infinite;
+}
+#box{
+    position: relative;
+}
+
+.competence{
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: absolute;
+}
+.competence h3 {
+    padding-left: 20px;
+}
+.competence p {
+    margin: 10%;
+}
+#com1{
+    background-color: #FAEDCD;
+    left: 0%;
+}
+#com2{
+    background-color: #FEFAE0;
+    left: 10%;
+    top: 100px;
+}
+#com3{
+    background-color: #E9EDC9;
+    left: 20%;
+}
+#com4{
+    background-color: #CCD5AE;
+    left: 30%;
+    top: 100px;
+}
+#com5{
+    background-color: #BBD6B8;
+    left: 40%;
+}
+#com6{
+    background-color: #94AF9F;
+    left: 50%;
+    top: 100px;
+}
+
+#page2, #page3{
+    /* 부모 요소의 마진 충돌으로 인해 설정함  */
+    overflow: auto; 
+}
+
+.inner{
+    color: #333336;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 5px #d3d3d3;
+}
+
+.inin{
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #333336ac;
+    box-shadow:  5px 5px 5px #d3d3d3;
+}
+
+.inin:hover {
+    transform: translateY(-5px) translateX(5px);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar_header {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+.calendar_day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
